@@ -30,5 +30,8 @@ export default {
   a {
     color: #73777a;
   }
+  .text-color:hover {
+    color: #c8cacc;
+  }
 }
 </style>

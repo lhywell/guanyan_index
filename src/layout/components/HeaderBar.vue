@@ -1,13 +1,12 @@
 <template>
   <el-header>
     <!-- <div class="logo"/> -->
-    <h1>{{ appName }}</h1>
-    <div class="userinfo">
-      <el-avatar :size="23" icon="el-icon-user-solid" />
-      <span class="nickname ellipsis" :title="name">{{ name }}</span>
-      <el-tooltip content="退出登录" placement="bottom">
-        <span class="el-icon-switch-button icon-logout" @click="loginOut" />
-      </el-tooltip>
+    <div class="header">
+      <span>首页</span>
+      <span>我们</span>
+      <span>产品</span>
+      <span>咨询</span>
+      <span>联系</span>
     </div>
   </el-header>
 </template>
@@ -44,6 +43,11 @@ export default {
   background: $bg-white;
   border-bottom: $border;
 
+  .header {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+  }
   .logo {
     width: 0.3rem;
     height: 100%;
@@ -51,32 +55,6 @@ export default {
     background-size: 100% auto;
     float: left;
     margin: 0 0.1rem 0 0;
-  }
-
-  h1 {
-    display: inline-block;
-    font-size: 0.2rem;
-    font-weight: normal;
-  }
-
-  .userinfo {
-    float: right;
-
-    .el-avatar {
-      vertical-align: middle;
-    }
-    .nickname {
-      margin: 0 0.2rem 0 0.1rem;
-      vertical-align: middle;
-    }
-
-    .icon-logout {
-      vertical-align: middle;
-      position: relative;
-      border-left: $border;
-      padding: 0 0.2rem;
-      cursor: pointer;
-    }
   }
 }
 </style>

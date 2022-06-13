@@ -1,6 +1,7 @@
 <template>
   <el-container id="app" :class="'page-' + $route.name" direction="vertical">
-    <el-header>Header</el-header>
+    <!-- <el-header>Header</el-header> -->
+    <HeaderBar />
     <el-main>
       <router-view :key="key" />
     </el-main>
@@ -8,11 +9,13 @@
   </el-container>
 </template>
 <script>
+import HeaderBar from './components/HeaderBar'
 import FootBar from './components/FootBar'
 
 export default {
   name: 'Layout',
   components: {
+    HeaderBar,
     FootBar,
   },
   computed: {

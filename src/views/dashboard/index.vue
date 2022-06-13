@@ -1,6 +1,8 @@
 <template>
-  <!-- <component :is="currentRole" /> -->
-  <div class="abc">sdfasdfasdfasdfasdfsdf</div>
+  <div class="container">
+    <img src="51837.jpg" alt="" style="width: 100%" />
+    <img src="63858.png" alt="" style="width: 100%" />
+  </div>
 </template>
 
 <script>
@@ -15,8 +17,11 @@ export default {
     ...mapGetters(['roles']),
   },
   watch: {},
-  created() {
-    window.console.log(111)
-  },
+  created() {},
 }
 </script>
+<style>
+.container {
+  overflow: hidden;
+}
+</style>
