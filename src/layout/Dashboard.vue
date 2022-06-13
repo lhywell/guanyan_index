@@ -4,23 +4,16 @@
     <el-main>
       <router-view :key="key" />
     </el-main>
-    <!-- <el-footer>Footer</el-footer> -->
     <FootBar />
   </el-container>
 </template>
 <script>
 import FootBar from './components/FootBar'
-// import HeaderBar from './components/HeaderBar'
-// import SideBar from './components/SideBar/index'
-// import Breadcrumb from './components/Breadcrumb'
 
 export default {
   name: 'Layout',
   components: {
     FootBar,
-    // HeaderBar,
-    // SideBar,
-    // Breadcrumb,
   },
   computed: {
     key() {
