@@ -1,0 +1,91 @@
+.page-login {
+  width: 100vw;
+  height: 100vh;
+  background: #2158bc url('./images/login.jpg');
+
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8.36rem;
+    height: 5.38rem;
+    padding: 0.55rem 0.32rem 0.15rem 4.73rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    box-shadow: 0.08rem 0 0.3rem rgb(6 11 76 / 30%);
+    transform: translate(-50%, -50%);
+
+    .login-left {
+      position: absolute;
+      top: -0.21rem;
+      left: 0;
+      width: 4.41rem;
+      height: 5.8rem;
+      background: url('./images/login-left.png');
+    }
+
+    .title {
+      float: left;
+      width: 100%;
+      margin: 0 0 0.35rem;
+      line-height: 0.4rem;
+      // border-bottom: 0.02rem solid #f5f6fa;
+
+      .title-tips {
+        color: #2b2b2b;
+        font-weight: 400;
+        font-size: 24px;
+      }
+
+      b {
+        color: #2b2b2b;
+        font-weight: 400;
+        font-size: 24px;
+      }
+    }
+
+    .el-input {
+      margin: 0 0 0.25rem;
+      overflow: hidden;
+      border-bottom: 1px solid #f2f2f2;
+
+      .el-input__inner {
+        padding: 0 0.05rem;
+        border: none;
+      }
+    }
+
+    .el-button--text {
+      float: right;
+      padding: 0;
+      margin: 0;
+      line-height: 0.2rem;
+    }
+
+    > .el-button {
+      display: block;
+      width: 1.1rem;
+      margin: 0.8rem auto 0;
+      border-radius: 0.2rem;
+    }
+
+    @at-root .el-popper[x-placement^='bottom'] .popper__arrow::after {
+      border-bottom-color: #fdf6ec;
+    }
+
+    .el-alert {
+      position: absolute;
+      bottom: 1.8rem;
+      width: 3.3rem;
+      padding: 0.05rem 0.16rem;
+
+      .el-alert__closebtn {
+        top: 0.1rem;
+      }
+    }
+  }
+}
+
+.pop-login {
+  padding: 0;
+}

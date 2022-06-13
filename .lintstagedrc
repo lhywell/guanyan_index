@@ -1,0 +1,4 @@
+{
+    "*.{js,jsx,vue,ts,tsx}": "vue-cli-service lint",
+    "*.{scss,sass,css,less}": "stylelint --fix --aei"
+}

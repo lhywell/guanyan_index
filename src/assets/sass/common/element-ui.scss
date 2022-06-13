@@ -1,0 +1,9 @@
+/* element-ui 样式定义 */
+[class*=' el-icon-'],
+[class^='el-icon-'] {
+  font-size: 0.14rem;
+}
+
+.el-upload-list {
+  display: none;
+}

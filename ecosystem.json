@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "name": "guanyan_frentend",
+      "script": "./main.js",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy": {
+    "production": {
+      "user": "root",
+      "host": ["123.57.207.8"],
+      "ref": "origin/master",
+      "repo": "git@github.com:lhywell/guanyan.git",
+      "path": "/root/project/guanyan/frontend",
+      "ssh_options": "StrictHostKeyChecking=no",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "post-deploy": "yarn setup && npm run build"
+    }
+  }
+}

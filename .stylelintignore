@@ -1,0 +1,7 @@
+*.min.css
+node_modules
+dist
+public
+src/assets/sass/common/mixins.scss
+src/assets/sass/common/variables.scss
+src/assets/sass/common/element-variables.scss

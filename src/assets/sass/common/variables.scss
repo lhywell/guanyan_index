@@ -1,0 +1,27 @@
+/* 字体 */
+$font-family: '苹方-简', 'Microsoft YaHei', '微软雅黑', helvetica, arial, sans-serif; // 默认字体
+
+/* 文字颜色 */
+$color: #484949; // 默认文字颜色
+$white: #fff; // 白色
+$black: #0e0e0e; // 黑色
+$blue: #0078fe; // 蓝色
+$gray: #7e899d; // 灰色
+$green: #5acd47; // 绿色
+$red: #fe6e6d; // 红色
+
+/* 背景色 */
+$bg: #f5f6fa; // 默认背景
+$bg-white: $white; // 白色
+$bg-gray: #f1f1f1; // 灰色
+$bg-gray-lighter: #f9fafe; // 浅灰
+$bg-blue: $blue; // 蓝色
+$bg-blue_lighter: #f2f6ff; // 浅蓝
+$bg-green-lighter: #f0ffed; // 浅绿
+$bg-red_lighter: #ffe1e0; // 浅红
+
+/* 边框 */
+$border: 1px solid #e7e9ef; // 默认边框
+
+/* 圆角 */
+$radius: 0.04rem;

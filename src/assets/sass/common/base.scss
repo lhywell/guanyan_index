@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: block;
+  content: '';
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/* other */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 利用background-image等比缩放图片 */
+.zoomimg {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  min-height: 15px;
+  background: rgb(50 50 50 / 60%);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0 0 0 / 50%);
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  // overflow-x: hidden;
+  overflow: auto;
+  font-family: $font-family;
+  font-size: 0.14rem;
+  color: $color;
+  background: $bg;
+}
+
+.mb-20 {
+  margin-top: 20px;
+}
+
+.patch {
+  background-color: #ffba00;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+}
+
+.red_package {
+  background-color: #ff5900;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+}
